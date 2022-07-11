@@ -9,7 +9,6 @@ This repo is the work done in an attempt to learn Navier-Stokes problem using ph
   <figcaption>
     Red represents classical convolutional layer, blue represents ConvLSTM layer and yellow represents de-convolutional layer.
     </figcaption>
-    
    </p>
 </figure>
 
@@ -20,7 +19,6 @@ This repo is the work done in an attempt to learn Navier-Stokes problem using ph
   <figcaption>
     Hidden states being passed from one AE-ConvLSTM Module's encoder to another (Module is rolled out). r is the Module sequence number, and $l$ is number of prediction in a single Module
     </figcaption>
-    
    </p>
 </figure>
 
