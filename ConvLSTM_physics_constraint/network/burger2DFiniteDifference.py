@@ -1,5 +1,6 @@
 '''This function is taken from the work the git repo
-https://github.com/cics-nd/ar-pde-cnn.git'''
+https://github.com/cics-nd/ar-pde-cnn.git
+The function is used to calculate loss for the problem of 2D viscous burgers using physics constraint'''
 
 import torch
 import torch.nn as nn
