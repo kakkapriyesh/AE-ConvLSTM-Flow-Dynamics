@@ -4,8 +4,7 @@ This repo is the work done in an attempt to learn Navier-Stokes problem using ph
 ![Red represents classical convolutional layer, blue represents ConvLSTM layer and yellow represents de-convolutional layer.](AE-ConvLSTM.png)
 ![Hidden states being passed from one AE-ConvLSTM Module's encoder to another (Module is rolled out). r is the Module sequence number, and $l$ is number of prediction in a single Module](AE-ConvLSTM_Rollout.png)
 ![sd](AE-ConvLSTM.png)
-![alt text](https://github.com/kakkapriyesh/AE-ConvLSTM_Flow_Dynamics/AE-ConvLSTM.png?raw=true)
-![alt text](https://github.com/kakkapriyesh/AE-ConvLSTM_Flow_Dynamics/AE-ConvLSTM_Rollout.png?raw=true)
+
 
 The document explaining ConvLSTM and the training of the network along with results (Please cite :) ) : (yet to be posted).
 
