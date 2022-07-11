@@ -28,4 +28,13 @@ The document explaining ConvLSTM and the training of the network along with resu
 
 The network is tested on data-driven cases: That is, training the network using data and the testing it on unseen data. Various attempts were viscous burgers equation, lid-driven cavity, flow past cylinder and vorticity dissipation formulation of N-S. The network can predict long time-series in few network passes hence helping the problem of vanishing gradients. Later the network was trained using governing equations only and no data (physics constraint method). The network captured 2-D viscous burgers fairly well as shown where training is done for 0.35 sec and the rest is extrapolations. First row is the target, second is prediction and the last is $L_{1}$ error (mostly at discontinuities). 
 
-![](Burgers_PC.gif)
+<figure>
+  <p align="center">
+  <img width="600" height="300"
+  src="https://github.com/kakkapriyesh/AE-ConvLSTM_Flow_Dynamics/blob/main/Burgers_PC.gif">
+  <figcaption>
+    Red represents classical convolutional layer, blue represents ConvLSTM layer and yellow represents de-convolutional layer.
+    </figcaption>
+   </p>
+</figure>
+![]()
