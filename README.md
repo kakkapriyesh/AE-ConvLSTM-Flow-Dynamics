@@ -3,10 +3,12 @@
 This repo is the work done in an attempt to learn Navier-Stokes problem using physics constraint without data. The network used was AE-ConvLSTM which is an extended version of the auto-encode convlstm network by https://github.com/jhhuang96/ConvLSTM-PyTorch. The modified network enables the learning of long chain of time steps (~100 +). The network structure looks something like this:
 
 <figure>
+  <p align="center">
   align="center"
   <img width="500" height="300"
   src="https://github.com/kakkapriyesh/AE-ConvLSTM_Flow_Dynamics/blob/main/AE-ConvLSTM.PNG">
   <figcaption>Red represents classical convolutional layer, blue represents ConvLSTM layer and yellow represents de-convolutional layer.</figcaption>
+    </p>
 </figure>
 
 ![Red represents classical convolutional layer, blue represents ConvLSTM layer and yellow represents de-convolutional layer](AE-ConvLSTM.PNG)
