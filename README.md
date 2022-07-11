@@ -4,8 +4,7 @@ This repo is the work done in an attempt to learn Navier-Stokes problem using ph
 
 <figure>
   <img align="centre" width="500" height="300"
-  src="https://github.com/kakkapriyesh/AE-ConvLSTM_Flow_Dynamics/blob/main/AE-ConvLSTM.PNG"
-  alt="Red represents classical convolutional layer, blue represents ConvLSTM layer and yellow represents de-convolutional layer.">
+  src="https://github.com/kakkapriyesh/AE-ConvLSTM_Flow_Dynamics/blob/main/AE-ConvLSTM.PNG">
   <figcaption>Red represents classical convolutional layer, blue represents ConvLSTM layer and yellow represents de-convolutional layer.</figcaption>
 </figure>
 
