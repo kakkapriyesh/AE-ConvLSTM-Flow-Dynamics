@@ -4,8 +4,8 @@ This repo is the work done in an attempt to learn Navier-Stokes problem using ph
 
 <figure>
   <img
-  src="https://github.com/kakkapriyesh/AE-ConvLSTM_Flow_Dynamics/blob/main/AE-ConvLSTM.PNG"
-  alt="The beautiful MDN logo.">
+  src="https://github.com/kakkapriyesh/AE-ConvLSTM_Flow_Dynamics/blob/main/AE-ConvLSTM.PNG" width="200" height="400"
+  alt="Red represents classical convolutional layer, blue represents ConvLSTM layer and yellow represents de-convolutional layer.">
   <figcaption>MDN Logo</figcaption>
 </figure>
 
