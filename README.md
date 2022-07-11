@@ -33,7 +33,7 @@ The network is tested on data-driven cases: That is, training the network using 
   <img width="250" height="550"
   src="https://github.com/kakkapriyesh/AE-ConvLSTM_Flow_Dynamics/blob/main/Burgers_PC.gif">
   <figcaption>
-    First row is the target, second is prediction and the last is $L_{1}$ error (mostly at discontinuities).
+             First row is the target, second is prediction and the last is $L_{1}$ error (mostly at discontinuities).
     </figcaption>
    </p>
 </figure>
