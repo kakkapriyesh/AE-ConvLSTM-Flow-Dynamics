@@ -1,6 +1,6 @@
 # AE-ConvLSTM_Flow_Dynamics
 
-This repo is the work done in an attempt to learn Navier-Stokes problem using physics constraint without data. The network used was AE-ConvLSTM which is an extended version of the auto-encode convlstm network by https://github.com/jhhuang96/ConvLSTM-PyTorch. The modified network enables the learning of long chain of time steps (~100 +). The network structure looks something like this:
+This repo is the work done in an attempt to learn the Navier-Stokes problem using physics constraints without data. The network used was AE-ConvLSTM, an extended version of the auto-encoder ConvLSTM network by https://github.com/jhhuang96/ConvLSTM-PyTorch. The modified network enables learning a long chain of time steps (~100 +). The network structure looks something like this:
 
 <figure>
   <p align="center">
@@ -28,9 +28,9 @@ This repo is the work done in an attempt to learn Navier-Stokes problem using ph
 
 
 
-The document explaining ConvLSTM and the training of the network along with results (Please cite !) : (yet to be posted).
+The document explaining ConvLSTM and the network training along with results (Please cite !) : (yet to be posted).
 
-The network is tested on data-driven cases: That is, training the network using data and the testing it on unseen data. Various attempts were viscous burgers equation, lid-driven cavity, flow past cylinder and vorticity dissipation formulation of N-S. The network can predict long time-series in few network passes hence helping the problem of vanishing gradients. Later the network was trained using governing equations only and no data (physics constraint method). The network captured 2-D viscous burgers fairly well as shown where training is done for 0.35 sec and the rest is extrapolation. 
+The network is tested on data-driven cases: i.e., training the network using data and testing it on unseen data. Various attempts were viscous burgers equation, lid-driven cavity, flow past cylinder, and vorticity dissipation formulation of N-S. The network can predict long time-series in few neural networks passes hence helping the problem of vanishing gradients. Later the network was trained using governing equations only and no data (physics constraint method). The network captured 2-D viscous burgers reasonably well, as shown where training is done for 0.35 sec, and the rest is extrapolation. 
 
 <figure>
   <p align="center">
@@ -44,4 +44,4 @@ The network is tested on data-driven cases: That is, training the network using 
    </p>
 </figure>
 
-This was possible by using finite difference discretization of the equation in the loss function and few bits of code (finite difference and image plotting) was taken from https://github.com/cics-nd/ar-pde-cnn. I have commented the source of data files in the code. Further, the physics constraint file contains loss function for lid-driven cavity and vorticity-dissipation formulation (periodic BC with Navier-Stokes), which was my attempt to make physics constraint work for unsteady Navier-Stokes solution but I couldnt do it :(, as it seems that time evolution changes manifolds drastically leading to local minima when using gradient decent for training.   
+This was possible by using finite difference discretization of the equation in the loss function, and a few bits of code (finite difference and image plotting) was taken from https://github.com/cics-nd/ar-pde-cnn. I have commented on the source of input data files in the code. Further, the physics constraint file contains loss function for lid-driven cavity and vorticity-dissipation formulation (periodic BC with Navier-Stokes), which was my attempt to make physics constraint work for unsteady Navier-Stokes solution. However, I could not do it. Time evolution changes manifolds drastically, leading to local minima when using gradient descent for training.   
