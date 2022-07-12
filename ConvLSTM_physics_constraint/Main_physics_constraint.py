@@ -61,8 +61,8 @@ dx = (x1 - x0)/64
 # this data is just for test and is found here: 
 #https://drive.google.com/drive/folders/1LoZSpNsgnhna-hcqPvUZ_3S-R-MZkiHI?usp=sharing
 
-Uinput_valid=np.load("data/dataset_input_PC_Valid_5_dt05.npy") #200,39,5,2,64,64
-Uinput=np.load("data/dataset_input_PC.npy") #200,19,5,2,64,64
+Uinput_valid=np.load("data_PC/dataset_input_PC_Valid_5_dt05.npy") #200,39,5,2,64,64
+Uinput=np.load("data_PC/dataset_input_PC.npy") #200,19,5,2,64,64
 
 burgerLoader = BurgerLoader(dt=0.005)
 training_loader = burgerLoader.createTrainingLoader(args.ntrain, 64, batch_size=args.batch_size)
