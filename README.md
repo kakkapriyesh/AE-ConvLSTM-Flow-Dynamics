@@ -45,3 +45,5 @@ The network is tested on data-driven cases: i.e., training the network using dat
 </figure>
 
 This was possible by using finite difference discretization of the equation in the loss function, and a few bits of code (finite difference and image plotting) was taken from https://github.com/cics-nd/ar-pde-cnn. I have commented on the source of input data files in the code. Further, the physics constraint file contains loss function for lid-driven cavity and vorticity-dissipation formulation (periodic BC with Navier-Stokes), which was my attempt to make physics constraint work for unsteady Navier-Stokes solution. However, I could not do it. Time evolution changes manifolds drastically for coupled fields having different magnitude and evolution(i.e., pressure and velocity in N-S equations) , leading to local minima when using gradient descent for training.   
+
+4 Tesla V100s where used for training. 
