@@ -28,7 +28,7 @@ This repo is the work done in an attempt to learn the Navier-Stokes problem usin
 </figure>
 
 
-Please cite the zonedo link if this code is useful to you.
+Please cite the zenodo link if this code is useful to you.
 
 The network is tested on data-driven cases: i.e., training the network using data and testing it on unseen data. Various attempts were viscous burgers equation, lid-driven cavity, flow past cylinder, and vorticity dissipation formulation of N-S. The network can predict long time-series in few neural networks passes hence helping the problem of vanishing gradients. Later the network was trained using governing equations only and no data (physics constraint method). The network captured 2-D viscous burgers reasonably well, as shown where training is done for 0.35 sec, and the rest is extrapolation. 
 
