@@ -1,6 +1,8 @@
 # AE-ConvLSTM-Flow-Dynamics (Pytorch)
 [![DOI](https://zenodo.org/badge/510851150.svg)](https://zenodo.org/badge/latestdoi/510851150)
 
+Please cite [Sequence to sequence AE-ConvLSTM network for modelling the dynamics of PDE systems] https://arxiv.org/abs/2208.07315 .
+
 This repo is the work done in an attempt to learn the Navier-Stokes problem using physics constraints without data. The network used was AE-ConvLSTM, an extended version of the auto-encoder ConvLSTM network by https://github.com/jhhuang96/ConvLSTM-PyTorch. The modified network enables learning a long chain of time steps (~100 +). The network structure looks something like this:
 
 <figure>
@@ -28,7 +30,7 @@ This repo is the work done in an attempt to learn the Navier-Stokes problem usin
 </figure>
 
 
-Please cite [Sequence to sequence AE-ConvLSTM network for modelling the dynamics of PDE systems] https://arxiv.org/abs/2208.07315 .
+
 
 The network is tested on data-driven cases: i.e., training the network using data and testing it on unseen data. Various attempts were viscous burgers equation, lid-driven cavity, flow past cylinder, and vorticity dissipation formulation of N-S. The network can predict long time-series in few neural networks passes hence helping the problem of vanishing gradients. Later the network was trained using governing equations only and no data (physics constraint method). The network captured 2-D viscous burgers reasonably well, as shown where training is done for 0.35 sec, and the rest is extrapolation. 
 
