@@ -1,7 +1,9 @@
 # AE-ConvLSTM-Flow-Dynamics (Pytorch)
 [![DOI](https://zenodo.org/badge/510851150.svg)](https://zenodo.org/badge/latestdoi/510851150)
 
-Please cite [Sequence to sequence AE-ConvLSTM network for modelling the dynamics of PDE systems] https://arxiv.org/abs/2208.07315 .
+Document: Sequence to sequence AE-ConvLSTM network for modelling the dynamics of PDE systems] https://arxiv.org/abs/2208.07315.
+
+Please cite the above paper if this is useful to you. 
 
 This repo is the work done in an attempt to learn the Navier-Stokes problem using physics constraints without data. The network used was AE-ConvLSTM, an extended version of the auto-encoder ConvLSTM network by https://github.com/jhhuang96/ConvLSTM-PyTorch. The modified network enables learning a long chain of time steps (~100 +). The network structure looks something like this:
 
