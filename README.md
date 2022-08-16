@@ -1,5 +1,6 @@
 # AE-ConvLSTM-Flow-Dynamics (Pytorch)
-[![DOI](https://zenodo.org/badge/510851150.svg)](https://zenodo.org/badge/latestdoi/510851150)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6994987.svg)](https://doi.org/10.5281/zenodo.6994987)
 
 Document: Sequence to sequence AE-ConvLSTM network for modelling the dynamics of PDE systems] https://arxiv.org/abs/2208.07315.
 
